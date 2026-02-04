@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>Desafio HTML 1</title>
+</head>
+<body>
+    <h1>
+        <font color="blue">Guia Prático: Fundamentos da Web e HTML</font>
+    </h1>
+    <h2>
+        <font color="blue" id="Índice">Índice:</font>
+    </h2>
+    <ul>
+        <li><a href="#Dinâmica">1. A Dinâmica Client-Server e Navegadores</a></li>
+        <li><a href="#Servidores">2. Servidores e Infraestrutura</a></li>
+        <li><a href="#Linguagens">3. Linguagens e o Papel do JavaScript</a></li>
+        <li><a href="#HTML">4. HTML na Prática: Mão na Massa</a></li>
+        <li><a href="#Glossário">5. Glossário de Tags Adicionais</a></li>
+
+    </ul>
+    <p>Fala, dev! Atualmente estou estudando na <abbr title="Digital Innovation One">DIO</abbr>. 
+    No início, eu achava que HTML era uma <del>linguagem de programação</del>, mas aprendi que é marcação.</p>
+        
+        
+    <p>Se você está começando agora, entender a dinâmica entre quem pede e quem entrega a informação é o primeiro passo para dominar o desenvolvimento web. Vamos passar pelos conceitos de infraestrutura até a prática da marcação.</p>
+    <hr>
+
+    <h2 id="Dinâmica">
+        1. A Dinâmica Client-Server e Navegadores
+    </h2>
+    <p><small><a href="#Índice">Voltar ao Topo</a></small></p>
+    <p>No linguajar web, temos dois atores principais: O <strong>Client</strong> (Cliente) e o <strong>Server</strong> (Servidor).</p>
+    <ul>
+        <li><strong>O Cliente:</strong> É o seu dispositivo (PC, celular) consumindo a internet. Quando você digita uma URL, o cliente envia uma requisição.</li>
+        <li><strong>O Servidor:</strong> É a máquina que recebe o pedido e retorna os arquivos necessários: HTML, CSS, JavaScript e imagens.</li>
+        <li><strong>O Cachê:</strong> Para não ficar "indo e vindo" no servidor sem necessidade, o navegador armazena arquivos temporariamente. Isso economiza banda e tempo.</li>
+        <li><strong>Navegadores e W3C:</strong> O navegador serve para interpretar os códigos. Para que um site não pareça quebrado em um browser e perfeito em outro, o Padrão W3C define as regras que todos devem seguir.</li>
+
+        <blockquote>Dica de mestre: Use o site <a href="https://W3Schools.com/tags/ref_html_browsersupport.asp" target="_blank">W3Schools</a> para verificar se uma tag ou comando funciona no navegador que seu usuário utiliza.</blockquote>
+    </ul>
+    <hr>
+    <h2 id="Servidores">
+        2. Servidores e Infraestrutura
+    </h2>
+    <p><small><a href="#Índice">Voltar ao Topo</a></small></p>
+    <p>Um servidor não é apenas um <i>"computador ligado"</i>. Ele é composto por <u>camadas:</u></p>
+    <ul>
+        <li><strong>Hardware:</strong> Focado em processamento e armazenamento pesado (SSDs e muita memória RAM).</li>
+        <li><strong>Software:</strong> Sistemas como Ubuntu, Debian ou Windows Server, rodando serviços como Apache ou Nginx.</li>
+    </ul>
+
+    <h3>Tipos de Servidores que você precisa conhecer:</h3>
+    <ul>
+        <li><strong>Proxy:</strong> Intermedeia a conexão (comum em empresas para filtrar acesso).</li>
+        <li><strong>Firewall:</strong> A barreira de segurança contra acessos externos.</li>
+        <li><strong>DNS:</strong> O "RG" da internet. Ele traduz o nome do site (https://www.google.com/search?q=google.com) para o IP da máquina.</li>
+        <li><strong>FTP:</strong> O protocolo padrão para transferir seus arquivos para a hospedagem.</li>
+    </ul>
+    <hr>
+    <h2 id="Linguagens">
+        3. Linguagens e o Papel do JavaScript
+    </h2>
+    <p><small><a href="#Índice">Voltar ao Topo</a></small></p>
+    <p>Existem linguagens que rodam no servidor (<strong>Back-End</strong>) e linguagens que rodam no navegador (<strong>Front-End</strong>).</p>
+    <ul>
+        <li><strong>Server-side:</strong> PHP, Python, C#, Java e o próprio JavaScript (via Node.js).</li>
+        <li><strong>Client-side:</strong> Aqui o JavaScript reina absoluto, interpretado pelo motor V8 (o mesmo do Chrome).</li>
+    </ul>
+    <blockquote><strong>Atenção:</strong> O <strong>HTML não é uma linguagem de programação</strong>, mas sim uma linguagem de marcação. Assim como um arquivo CSV organiza dados, o HTML organiza a estrutura do que vemos.</blockquote>
+    <hr>
+    <h2 id="HTML">
+        4. HTML na Prática: Mão na Massa
+    </h2>
+    <p><small><a href="#Índice">Voltar ao Topo</a></small></p>
+    <p>Para começar, usamos o <strong>VS Code</strong> com a extensão <strong>Live Server</strong> para ver as alterações em tempo real. A estrutura básica de qualquer página segue este esqueleto:</p>
+
+    <p>< html></p>
+    <p>---< head></p>
+    <p>------    < title>Meu Aprendizado DIO < /title></p>
+    <p>---< /head></p>
+    <p>---< body></p>
+    <p>------    Conteúdo visível aqui.</p>
+    <p>---< /body></p>
+<p>< /html></p>
+
+    <h3>Dominando as Tags de Texto (Tipografia)</h3>
+    <p>Ao escrever seu conteúdo, use a semântica correta para que o Google e os leitores de tela entendam sua página:</p>
+    <ul>
+        <li><strong>Hierarquia:</strong> Utilize <mark>< h1></mark> para o título principal e de <mark>< h2></mark> até <mark>< h6></mark> para subtítulos.</li>
+        <li><strong>Parágrafos:</strong> O texto comum deve estar sempre dentro de <mark>< p></mark>.</li>
+        <li><strong>Ênfase:</strong> Se algo é urgente ou muito importante, use <mark>< strong></mark>. Para termos técnicos ou estrangeirismos, use <mark>< i></mark> (itálico).</li>
+        <li><strong>Destaques:</strong> Quer simular um marca-texto? Use a tag <mark>< mark></mark>. Para letras miúdas (como direitos autorais), use <mark>< small></mark>.</li>
+        <li><strong>Estilos Específicos:</strong> <sup>*</sup> Para fórmulas como H<sup>2</sup>O, use <mark>< sub></mark> (subscrito).</li>
+        <ul>
+            <li>Para potências como X<sup>2</sup>, use <mark>< sup></mark> (sobrescrito).</li>
+            <li>Para sublinhar algo que precisa de atenção, use <mark>< u></mark></li>
+        </ul>
+        <li><strong>Separação:</strong> Para criar uma quebra temática entre assuntos, a tag <mark>< hr></mark> cria uma linha horizontal.</li>
+    </ul>
+    <h3>Citações e Listas</h3>
+    <p>Se for citar algum autor ou referência externa, utilize o <mark>< blockquote></mark>, que dá um recuo visual no texto. Para organizar informações, temos dois tipos de listas:</p>
+    <ol>
+        <li><strong>Ordenadas <mark>(< ol>)</mark></strong>: Quando a ordem importa (1, 2, 3...).</li>
+        <li><strong>Não Ordenadas <mark>(< ul>)</mark></strong>: Quando a ordem não importa (pontinhos/bullets).</li>
+        <li><strong>Itens <mark>(< li>):</mark></strong> Cada item da lista, seja ela qual for, deve estar dentro desta tag.</li>
+    </ol>
+
+    <h3>Links e Atributos</h3>
+    <p>A tag <mark>< a></mark> (âncora) é o que conecta a web. Ela usa o atributo <mark>href</mark> para apontar o destino.</p>
+    <blockquote><strong>Nota sobre Atributos:</strong> Tags como <mark>< img></mark> ou <mark>< input></mark> não costumam ter fechamento e dependem de atributos (como src para o caminho da imagem ou <mark>type</mark> para o tipo do campo de texto) para funcionar corretamente.</blockquote>
+    <hr>
+    <h2 id="Glossário">
+        5. Glossário de Tags Adicionais
+    </h2>
+    <p><small><a href="#Índice">Voltar ao Topo</a></small></p>
+    <p>Para cumprir o desafio, pesquisei e apliquei tags que ajudam na semântica e na formatação específica:</p>
+    
+    <ul>
+        <li>
+            <strong>Tag <mark>< abbr></mark>:</strong> Serve para definir uma abreviação ou sigla. 
+            Exemplo: Atualmente estudo na <abbr title="Digital Innovation One">DIO</abbr>. 
+            (Passe o mouse sobre o nome para ver o significado).
+        </li>
+        <li>
+            <strong>Tag <mark>< font></mark>:</strong> Era usada para definir cor e tamanho da fonte antes do CSS. 
+            Exemplo: <font color="green">Este texto está verde usando a tag font.</font>
+        </li>
+        <li>
+            <strong>Tag <mark>< del></mark>:</strong> Indica um texto que foi removido ou corrigido. 
+            Exemplo: Eu achava que HTML era <del>difícil</del>, mas agora vejo que é questão de prática.
+        </li>
+    </ul>
+
+    <hr>
+    <h4>Notas de Rodapé e Hierarquia</h4>
+    <h5>Referências bibliográficas</h5>
+    <h6>Documentação oficial da W3C - 2026</h6>
+
+</body>
+</html>
