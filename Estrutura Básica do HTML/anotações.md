@@ -69,4 +69,24 @@ LINKS
 
 tag: a: âncora
 
-<h1> Meu primeiro site</h1>
+Ex:
+
+<html>
+	<head>
+		<title>Título do Site</title>
+	</head>
+	<body>
+		<h1>Meu primeiro site</h1>
+		<ul>
+			<li>
+				<a href="https://fabiozanini.com">fabiozanini.com</a> //isso faz o link abrir na mesma página
+			</li>
+			<li>
+				<a href="https://fabiozanini.com" target="_blank">fabiozanini.com</a> //o target blank faz faz o link abrir em uma nova aba
+			</li>
+			<li>
+				<a href="https://fabiozanini.com" title="Passar o mouse" target="_blank">fabiozanini.com</a> //Este Atributo 'title', permite abrir um balão com o nome ao passar o mouse por cima
+			</li>
+		</ul>
+	</body>
+</html>
